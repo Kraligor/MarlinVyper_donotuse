@@ -1,3 +1,7 @@
+Modified bugfix-2.1.x version for use in Anycubic Vyper printers. The settings are mostly similar to those in CommunityFirmware6.1d. In order to use this firmware you need to flash your LCD with the files found in Merlin Example Configurations.
+
+Not all enabled features are accessible/configurable via LCD, using something like Pronterface is highly recommended.
+
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
