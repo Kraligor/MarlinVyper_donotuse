@@ -1,3 +1,5 @@
+**USE AT YOUR OWN RISK**
+
 Modified bugfix-2.1.x version for use in Anycubic Vyper printers. The settings are mostly similar to those of the [Vyper Community Edition 6.1d](https://github.com/rommulaner/Anycubic_Vyper_MB_CE_6.1d) firmware.
 
 By default Linear Advance is disabled. If you want to enable it comment out `#DEFINE VYPER_JERK` and uncomment `//#DEFINE VYPER_LA` in `Configuration.h` before compiling.
@@ -10,7 +12,7 @@ Make sure to tune your hotend and bed PID settings for your commonly used temper
 
 Make sure to calibrate your E-steps, although the default value of `420` might be correct since it is both set in CE6.1d and the result of my manual calibration.
 
-If Linear Advanced is enabled make sure to configure it as well, as the default k-value is 0.
+If Linear Advance is enabled make sure to configure it as well, as the default k-value is `0`.
 
 
 
