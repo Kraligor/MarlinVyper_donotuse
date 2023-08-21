@@ -1,6 +1,14 @@
-Modified bugfix-2.1.x version for use in Anycubic Vyper printers. The settings are mostly similar to those in CommunityFirmware6.1d. In order to use this firmware you need to flash your LCD with the files found in Merlin Example Configurations.
+Modified bugfix-2.1.x version for use in Anycubic Vyper printers. The settings are mostly similar to those of the [Vyper Community Edition 6.1d](https://github.com/rommulaner/Anycubic_Vyper_MB_CE_6.1d) firmware.
 
-Not all enabled features are accessible/configurable via LCD, using something like Pronterface is highly recommended.
+In order to use this firmware you need to flash your LCD with the files found in the official [Example Configurations](https://github.com/MarlinFirmware/Configurations/tree/import-2.1.x/config/examples/AnyCubic/Vyper). Unfortunately porting the Community Edition LCD settings to 2.1.x would require a ton of work; modifying the stock Marlin LCD firmware even more so, since DGUS displays are a pain to work with. As a result not all enabled features are accessible/configurable via LCD, so using a USB host control software like [Pronterface](https://github.com/kliment/Printrun/releases) or [Octoprint](https://github.com/OctoPrint/OctoPrint) is highly recommended.
+
+Make sure to tune your hotend and bed PID settings for your commonly used temperatures:
+Hotend (change 210 to whatever temperature that makes sense to you): `M303 E0 C8 S210`
+Bed (change 60 to whatever temperature that makes sense to you): `M303 E-1 C8 S60`
+
+Make sure to calibrate your E-steps.
+
+
 
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
