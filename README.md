@@ -2,7 +2,7 @@
 
 Modified bugfix-2.1.x version for use in Anycubic Vyper printers. The settings are mostly similar to those of the [Vyper Community Edition 6.1d](https://github.com/rommulaner/Anycubic_Vyper_MB_CE_6.1d) firmware. Stepper drivers are configured as 2209_STANDALONE.
 
-By default Linear Advance is disabled. If you want to enable it comment out `#DEFINE VYPER_JERK` and uncomment `//#DEFINE VYPER_LA` in `Configuration.h` before compiling.
+By default Linear Advance is disabled. If you want to enable it comment out `#DEFINE VYPER_JERK` and uncomment `//#DEFINE VYPER_LA` in `Configuration.h` before compiling. Uncomment `//#VYPER_ADD_INPUTSHAPING` to enable M493 fixed-time-based motion control (input shaping).
 
 In order to use this firmware you need to flash your LCD with the files found in the official [Example Configurations](https://github.com/MarlinFirmware/Configurations/tree/import-2.1.x/config/examples/AnyCubic/Vyper). Unfortunately porting the Community Edition LCD settings to 2.1.x would require a ton of work; modifying the stock Marlin LCD firmware even more so, since DGUS displays are a pain to work with. As a result not all enabled features are accessible/configurable via LCD, so using a USB host control software like [Pronterface](https://github.com/kliment/Printrun/releases) or [Octoprint](https://github.com/OctoPrint/OctoPrint) is highly recommended.
 
