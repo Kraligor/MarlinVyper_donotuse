@@ -30,6 +30,8 @@ out-csv/
 out-language/
 *.gen
 *.sublime-workspace
+.vscode/launch.json
+.vscode/c_cpp_properties.json
 
 # OS
 applet/
