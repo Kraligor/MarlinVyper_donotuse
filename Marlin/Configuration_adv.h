@@ -1111,6 +1111,11 @@
  * Enable/disable and set parameters with G-code M493.
  */
 //#define FT_MOTION
+
+#if ENABLED(VYPER_ADD_INPUTSHAPING)
+  #define FT_MOTION
+#endif
+
 #if ENABLED(FT_MOTION)
   #define FTM_DEFAULT_MODE        ftMotionMode_DISABLED // Default mode of fixed time control. (Enums in ft_types.h)
   #define FTM_DEFAULT_DYNFREQ_MODE dynFreqMode_DISABLED // Default mode of dynamic frequency calculation. (Enums in ft_types.h)

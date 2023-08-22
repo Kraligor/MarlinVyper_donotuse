@@ -60,8 +60,15 @@
 
 // @section info
 
-#define VYPER_JERK
-//#define VYPER_LA
+//============================================================
+//===CHOOSE ONE OF THE FOLLOWING BY COMMENTING/UNCOMMENTING===
+#define VYPER_JERK  // classic jerk, default
+//#define VYPER_LA  // linear advance
+
+//========OPTIONALLY ADD FEATURES BY UNCOMMENTING BELOW=======
+//#define VYPER_ADD_INPUTSHAPING  // M493 input shaping
+//============================================================
+
 
 // Author info of this build printed to the host during boot and M115
 #define STRING_CONFIG_H_AUTHOR "(Kraligor, based on CE6.1d)" // Who made the changes.
