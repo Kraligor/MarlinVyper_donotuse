@@ -1,16 +1,16 @@
 **USE AT YOUR OWN RISK**
 
-Modified bugfix-2.1.x version for use in Anycubic Vyper printers. The settings are mostly similar to those of the [Vyper Community Edition 6.1d](https://github.com/rommulaner/Anycubic_Vyper_MB_CE_6.1d) firmware.
+Modified bugfix-2.1.x version for use in Anycubic Vyper printers. The settings are mostly similar to those of the [Vyper Community Edition 6.1d](https://github.com/rommulaner/Anycubic_Vyper_MB_CE_6.1d) firmware. Stepper drivers are configured as 2209_STANDALONE.
 
 By default Linear Advance is disabled. If you want to enable it comment out `#DEFINE VYPER_JERK` and uncomment `//#DEFINE VYPER_LA` in `Configuration.h` before compiling.
 
 In order to use this firmware you need to flash your LCD with the files found in the official [Example Configurations](https://github.com/MarlinFirmware/Configurations/tree/import-2.1.x/config/examples/AnyCubic/Vyper). Unfortunately porting the Community Edition LCD settings to 2.1.x would require a ton of work; modifying the stock Marlin LCD firmware even more so, since DGUS displays are a pain to work with. As a result not all enabled features are accessible/configurable via LCD, so using a USB host control software like [Pronterface](https://github.com/kliment/Printrun/releases) or [Octoprint](https://github.com/OctoPrint/OctoPrint) is highly recommended.
 
-Make sure to tune your hotend and bed PID settings for your commonly used temperatures:
+Make sure to tune your hotend and bed PID settings for your commonly used temperatures, the default values are my results for 230/110:
 - Hotend (replace 230 with your temp): `M303 E0 C8 S230`
 - Bed (replace 110 with your temp): `M303 E-1 C8 S110`
 
-Make sure to calibrate your E-steps, although the default value of `420` might be correct since it is both set in CE6.1d and the result of my manual calibration.
+Make sure to calibrate your E-steps, although the default value of `420` might be correct since it is both set in CE6.1d and the result of my manual calibration. The original firmware value is `407`.
 
 If Linear Advance is enabled make sure to configure it as well, as the default k-value is `0`.
 
