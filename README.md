@@ -12,7 +12,7 @@ Make sure to tune your hotend and bed PID settings for your commonly used temper
 
 Make sure to calibrate your E-steps, although the default value of `420` might be correct since it is both set in CE6.1d and the result of my manual calibration. The original firmware value is `407`.
 
-If Linear Advance is enabled make sure to configure it as well, as the default k-value is `0`.
+If you choose to enable Linear Advance make sure to configure it as well, as the default k-value is `0`.
 
 
 
